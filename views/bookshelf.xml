@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <record model="ir.actions.act_window" id="books_list_action">
+        <field name="name">Libros</field>
+        <field name="res_model">bookshelf.book</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Aqui esta algo solo. Agrega algunos libros</p>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="books_form_view">
+        <field name="name">bookshelf.form</field>
+        <field name="model">bookshelf.book</field>
+        <field name="arch" type="xml">
+            <form string="Libros Gratis">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                    </group>
+
+                    <group>
+                        <field name="criticize" />
+                        <field name="ISBN" />
+                    </group>
+
+                    <notebook>
+                        <page string="Autores">
+                            <field name="author_id">
+                                <tree>
+                                    <field name="id" />
+                                    <field name="name" />
+                                    <field name="nationality" />
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="authors_list_action">
+        <field name="name">Autores</field>
+        <field name="res_model">bookshelf.author</field>
+        <field name="view_model">tree,form</field>
+    </record>
+
+    <record model="ir.ui.view" id="authors_form_view">
+        <field name="name">authors.tree</field>
+        <field name="model">bookshelf.author</field>
+        <field name="arch" type="xml">
+            <form string="Authors">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="nationality" />
+                    </group>
+
+                    <notebook>
+                        <page string="Libros">
+                            <field name="book_ids">
+                                <tree>
+                                    <field name="name" />
+                                    <field name="ISBN" />
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <menuitem id="main_bookshelf_menu" name="BookShelf" />
+
+    <menuitem id="bookshelf_menu" name="Book Shelf"
+                parent="main_bookshelf_menu"
+                action="books_list_action"/>
+
+    <menuitem id="books_menu" name="Libros" parent="bookshelf_menu"
+              action="books_list_action" />
+    <menuitem id="authors_menu" name="Autores" parent="bookshelf_menu"
+              action="authors_list_action" />
+</odoo>
