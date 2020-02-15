@@ -15,7 +15,8 @@
 
     'data': [
         'security/ir.model.access.csv',
-        'views/bookshelf.xml'
+        'views/bookshelf.xml',
+        'demo/demo_data.xml'
     ],
     'sequence': 1,
 }
