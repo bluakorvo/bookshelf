@@ -14,39 +14,39 @@
             <field name="birthdate">2015-01-01</field>
         </record>
 
-        <record model="bookshelf.author" id="author2">
+        <record model="bookshelf.author" id="bookshelf.author.hector">
             <field name="name">Hector</field>
             <field name="nationality">Americano</field>
             <field name="birthdate">2016-02-01</field>
         </record>
 
 
-        <record model="bookshelf.book"  id="book0">
+        <record model="bookshelf.book"  id="bookshelf.book.necronomicon">
             <field name="name">Necronomicon</field>
             <field name="isbn">121</field>
             <field name="criticize">LEERLO TE LLEVARA A LA LOCURA</field>
             <field name="author_id" ref="bookshelf.author.zaratrusta" />
         </record>
 
-        <record model="bookshelf.book"  id="book1">
+        <record model="bookshelf.book"  id="bookshelf.book.elmodernoprometeo">
             <field name="name">El Moderno Prometeo</field>
             <field name="isbn">1231</field>
             <field name="criticize">¿Quién escapa de sus creaturas?</field>
             <field name="author_id" ref="bookshelf.author.emiliano" />
         </record>
 
-        <record model="bookshelf.book"  id="book2">
+        <record model="bookshelf.book"  id="bookshelf.book.elprincipe">
             <field name="name">El Principe</field>
             <field name="isbn">543</field>
             <field name="criticize">Increible continuación de El Principito.</field>
-            <field name="author_id" ref="author2" />
+            <field name="author_id" ref="bookshelf.author.hector" />
         </record>
 
-        <record model="bookshelf.book"  id="book3">
+        <record model="bookshelf.book"  id="bookshelf.book.corazondelator">
             <field name="name">Corazón Delator</field>
             <field name="isbn">161</field>
             <field name="criticize"></field>
-            <field name="author_id" ref="author0" />
+            <field name="author_id" ref="bookshelf.author.zaratrusta" />
         </record>
     </data>
 </odoo>

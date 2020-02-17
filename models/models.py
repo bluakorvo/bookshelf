@@ -1,5 +1,5 @@
 # -*_ coding: utf-8 -*-
-from odoo import models, exceptions, fields
+from odoo import models, fields, api, exceptions
 
 
 
@@ -17,7 +17,7 @@ class Book(models.Model):
         ('ISBN_unique',
          'UNIQUE(isbn)',
          "ERROR: Only unique ISBN allowed"),
-    ]
+    ]s
 
 
 class Author(models.Model):
