@@ -7,8 +7,8 @@ class Book(models.Model):
     _description = 'Books from BookShelf'
 
     name = fields.Char(string="Title", required=True)
-    isbn = fields.Char(required=True)
     criticize = fields.Text()
+    isbn = fields.Char(required=True)
 
     author_id = fields.Many2one('bookshelf.author', index=True)
 
