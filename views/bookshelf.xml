@@ -31,8 +31,8 @@
                             <field name="author_id">
                                 <tree>
                                     <field name="id" />
-                                    <field name="name" />
                                     <field name="nationality" />
+                                    <field name="name" />
                                 </tree>
                             </field>
                         </page>
