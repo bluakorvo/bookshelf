@@ -21,10 +21,7 @@ class Book(models.Model):
          'UNIQUE(isbn)',
          "ERROR: El ISBN debe ser unico"),
     ]
-
-    @api.depends('isbn')
-    def _verify_ISBN_integrity(self):
-        if self.isbn
+    
 
 class Author(models.Model):
     _name = 'bookshelf.author'
