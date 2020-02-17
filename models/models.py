@@ -1,5 +1,7 @@
 # -*_ coding: utf-8 -*-
-from odoo import fields, models, api, exceptions
+
+from odoo import models, exceptions, fields, api
+
 
 
 class Book(models.Model):
