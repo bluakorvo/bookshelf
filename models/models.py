@@ -1,9 +1,5 @@
 # -*_ coding: utf-8 -*-
-
 from odoo import models, fields, api, exceptions
-
-import re
-
 
 
 class Book(models.Model):
@@ -21,7 +17,7 @@ class Book(models.Model):
          'UNIQUE(isbn)',
          "ERROR: El ISBN debe ser unico"),
     ]
-    
+
 
 class Author(models.Model):
     _name = 'bookshelf.author'
