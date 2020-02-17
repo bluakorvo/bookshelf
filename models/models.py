@@ -1,5 +1,5 @@
 # -*_ coding: utf-8 -*-
-from odoo import models, exceptions, fields, api
+from odoo import models, exceptions, fields
 
 
 class Book(models.Model):
@@ -15,15 +15,15 @@ class Book(models.Model):
     _sql_constraints = [
         ('ISBN_unique',
          'UNIQUE(isbn)',
-         "ERROR: El ISBN debe ser unico"),
+         "ERROR: Only unique ISBN allowed"),
     ]
 
 
 class Author(models.Model):
     _name = 'bookshelf.author'
-    _description = 'Autores en BookShelf'
+    _description = 'Authors on BookShelf'
 
-    name = fields.Char(string="Nombre", required=True)
+    name = fields.Char(string="Name", required=True)
     nationality = fields.Char(default="Unknow")
     birthdate = fields.Date(required=True)
 

@@ -8,8 +8,8 @@
     """,
     'author': "A.M.G.B.",
     'website': "R.RR",
-    'category': "Uncategorized",
-    'version': '0.0.1-t',
+    'category': "Uncategorized, Test, Postventa",
+    'version': '12.0.0.1',
 
     'depends': ['base'],
 

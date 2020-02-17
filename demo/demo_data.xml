@@ -2,13 +2,13 @@
 
 <odoo>
     <data>
-        <record model="bookshelf.author" id="author0">
+        <record model="bookshelf.author" id="bookshelf.author.zaratrusta">
             <field name="name">Zaratrusta</field>
             <field name="nationality">Europeo</field>
             <field name="birthdate">2015-01-01</field>
         </record>
 
-        <record model="bookshelf.author" id="author1">
+        <record model="bookshelf.author" id="bookshelf.author.emiliano">
             <field name="name">Emilia Zaraniego</field>
             <field name="nationality">Asiatico</field>
             <field name="birthdate">2015-01-01</field>
@@ -25,14 +25,14 @@
             <field name="name">Necronomicon</field>
             <field name="isbn">121</field>
             <field name="criticize">LEERLO TE LLEVARA A LA LOCURA</field>
-            <field name="author_id" ref="author0" />
+            <field name="author_id" ref="bookshelf.author.zaratrusta" />
         </record>
 
         <record model="bookshelf.book"  id="book1">
             <field name="name">El Moderno Prometeo</field>
             <field name="isbn">1231</field>
             <field name="criticize">¿Quién escapa de sus creaturas?</field>
-            <field name="author_id" ref="author1" />
+            <field name="author_id" ref="bookshelf.author.emiliano" />
         </record>
 
         <record model="bookshelf.book"  id="book2">
