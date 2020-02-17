@@ -23,28 +23,28 @@
 
         <record model="bookshelf.book"  id="book0">
             <field name="name">Necronomicon</field>
-            <field name="ISBN">121</field>
+            <field name="isbn">121</field>
             <field name="criticize">LEERLO TE LLEVARA A LA LOCURA</field>
             <field name="author_id" ref="author0" />
         </record>
 
         <record model="bookshelf.book"  id="book1">
             <field name="name">El Moderno Prometeo</field>
-            <field name="ISBN">1231</field>
+            <field name="isbn">1231</field>
             <field name="criticize">¿Quién escapa de sus creaturas?</field>
             <field name="author_id" ref="author1" />
         </record>
 
         <record model="bookshelf.book"  id="book2">
             <field name="name">El Principe</field>
-            <field name="ISBN">543</field>
+            <field name="isbn">543</field>
             <field name="criticize">Increible continuación de El Principito.</field>
             <field name="author_id" ref="author2" />
         </record>
 
         <record model="bookshelf.book"  id="book3">
             <field name="name">Corazón Delator</field>
-            <field name="ISBN">161</field>
+            <field name="isbn">161</field>
             <field name="criticize"></field>
             <field name="author_id" ref="author0" />
         </record>

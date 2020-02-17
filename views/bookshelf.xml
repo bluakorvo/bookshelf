@@ -23,7 +23,7 @@
 
                     <group>
                         <field name="criticize" />
-                        <field name="ISBN" />
+                        <field name="isbn" />
                     </group>
 
                     <notebook>
@@ -45,7 +45,7 @@
     <record model="ir.actions.act_window" id="authors_list_action">
         <field name="name">Autores</field>
         <field name="res_model">bookshelf.author</field>
-        <field name="view_model">tree,form</field>
+        <field name="view_mode">tree,form</field>
     </record>
 
     <record model="ir.ui.view" id="authors_form_view">
@@ -64,7 +64,7 @@
                             <field name="book_ids">
                                 <tree>
                                     <field name="name" />
-                                    <field name="ISBN" />
+                                    <field name="isbn" />
                                 </tree>
                             </field>
                         </page>
