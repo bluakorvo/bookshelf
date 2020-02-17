@@ -2,6 +2,7 @@
 from odoo import models, exceptions, fields
 
 
+
 class Book(models.Model):
     _name = 'bookshelf.book'
     _description = 'Books from BookShelf'
