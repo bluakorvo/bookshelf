@@ -2,51 +2,51 @@
 
 <odoo>
     <data>
-        <record model="bookshelf.author" id="bookshelf.author.zaratrusta">
+        <record model="bookshelf.author" id="bookshelf_author_zaratrusta">
             <field name="name">Zaratrusta</field>
             <field name="nationality">Europeo</field>
             <field name="birthdate">2015-01-01</field>
         </record>
 
-        <record model="bookshelf.author" id="bookshelf.author.emiliano">
+        <record model="bookshelf.author" id="bookshelf_author_emiliano">
             <field name="name">Emilia Zaraniego</field>
             <field name="nationality">Asiatico</field>
             <field name="birthdate">2015-01-01</field>
         </record>
 
-        <record model="bookshelf.author" id="bookshelf.author.hector">
+        <record model="bookshelf.author" id="bookshelf_author_hector">
             <field name="name">Hector</field>
             <field name="nationality">Americano</field>
             <field name="birthdate">2016-02-01</field>
         </record>
 
 
-        <record model="bookshelf.book"  id="bookshelf.book.necronomicon">
+        <record model="bookshelf.book"  id="bookshelf_book_necronomicon">
             <field name="name">Necronomicon</field>
             <field name="isbn">121</field>
             <field name="criticize">LEERLO TE LLEVARA A LA LOCURA</field>
-            <field name="author_id" ref="bookshelf.author.zaratrusta" />
+            <field name="author_id" ref="bookshelf_author_zaratrusta" />
         </record>
 
-        <record model="bookshelf.book"  id="bookshelf.book.elmodernoprometeo">
+        <record model="bookshelf.book"  id="bookshelf_book_elmodernoprometeo">
             <field name="name">El Moderno Prometeo</field>
             <field name="isbn">1231</field>
             <field name="criticize">¿Quién escapa de sus creaturas?</field>
-            <field name="author_id" ref="bookshelf.author.emiliano" />
+            <field name="author_id" ref="bookshelf_author_emiliano" />
         </record>
 
-        <record model="bookshelf.book"  id="bookshelf.book.elprincipe">
+        <record model="bookshelf.book"  id="bookshelf_book_elprincipe">
             <field name="name">El Principe</field>
             <field name="isbn">543</field>
             <field name="criticize">Increible continuación de El Principito.</field>
-            <field name="author_id" ref="bookshelf.author.hector" />
+            <field name="author_id" ref="bookshelf_author_hector" />
         </record>
 
-        <record model="bookshelf.book"  id="bookshelf.book.corazondelator">
+        <record model="bookshelf.book"  id="bookshelf_book_corazondelator">
             <field name="name">Corazón Delator</field>
             <field name="isbn">161</field>
             <field name="criticize"></field>
-            <field name="author_id" ref="bookshelf.author.zaratrusta" />
+            <field name="author_id" ref="bookshelf_author_zaratrusta" />
         </record>
     </data>
 </odoo>
