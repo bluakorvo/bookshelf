@@ -17,7 +17,7 @@ class Book(models.Model):
         ('ISBN_unique',
          'UNIQUE(isbn)',
          "ERROR: Only unique ISBN allowed"),
-    ]s
+    ]
 
 
 class Author(models.Model):
