@@ -141,4 +141,8 @@ msgstr "Nada que mostrar. Agrega algunos libros"
 #. module: bookshelf
 #: model:ir.model.fields,field_description:bookshelf.field_bookshelf_book__name
 msgid "Title"
+<<<<<<< HEAD
 msgstr "Título"
+=======
+msgstr "Título"
+>>>>>>> c5f741f60731ab0a3820112535d82782849165d2
