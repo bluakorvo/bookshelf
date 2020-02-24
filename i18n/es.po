@@ -1,0 +1,144 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* bookshelf
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-21 18:27+0000\n"
+"PO-Revision-Date: 2020-02-21 18:27+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bookshelf
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_book__author_id
+msgid "Author"
+msgstr "Autor"
+
+#. module: bookshelf
+#: model:ir.actions.act_window,name:bookshelf.authors_list_action
+#: model:ir.ui.menu,name:bookshelf.authors_menu
+#: model_terms:ir.ui.view,arch_db:bookshelf.authors_form_view
+#: model_terms:ir.ui.view,arch_db:bookshelf.books_form_view
+msgid "Authors"
+msgstr "Autores"
+
+#. module: bookshelf
+#: model:ir.model,name:bookshelf.model_bookshelf_author
+msgid "Authors on BookShelf"
+msgstr "Autores en BookShelf"
+
+#. module: bookshelf
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_author__birthdate
+msgid "Birthdate"
+msgstr "Nacimiento"
+
+#. module: bookshelf
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_author__book_ids
+#: model_terms:ir.ui.view,arch_db:bookshelf.books_form_view
+msgid "Book"
+msgstr "Libro"
+
+#. module: bookshelf
+#: model:ir.ui.menu,name:bookshelf.bookshelf_menu
+msgid "Book Shelf"
+msgstr ""
+
+#. module: bookshelf
+#: model:ir.ui.menu,name:bookshelf.main_bookshelf_menu
+msgid "BookShelf"
+msgstr ""
+
+#. module: bookshelf
+#: model:ir.actions.act_window,name:bookshelf.books_list_action
+#: model:ir.ui.menu,name:bookshelf.books_menu
+#: model_terms:ir.ui.view,arch_db:bookshelf.authors_form_view
+msgid "Books"
+msgstr "Libros"
+
+#. module: bookshelf
+#: model:ir.model,name:bookshelf.model_bookshelf_book
+msgid "Books from BookShelf"
+msgstr "Libros en BookShelf"
+
+#. module: bookshelf
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_author__create_uid
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_book__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: bookshelf
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_author__create_date
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_book__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: bookshelf
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_book__criticize
+msgid "Criticize"
+msgstr "Critica"
+
+#. module: bookshelf
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_author__display_name
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_book__display_name
+msgid "Display Name"
+msgstr "Nombre Mostrado"
+
+#. module: bookshelf
+#: sql_constraint:bookshelf.book:0
+msgid "ERROR: Only unique ISBN allowed"
+msgstr "ERROR: Solo ISBN unico permitido"
+
+#. module: bookshelf
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_author__id
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_book__id
+msgid "ID"
+msgstr ""
+
+#. module: bookshelf
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_book__isbn
+msgid "Isbn"
+msgstr "ISBN"
+
+#. module: bookshelf
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_author____last_update
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_book____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: bookshelf
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_author__write_uid
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_book__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: bookshelf
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_author__write_date
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_book__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: bookshelf
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_author__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: bookshelf
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_author__nationality
+msgid "Nationality"
+msgstr "Nacionalidad"
+
+#. module: bookshelf
+#: model_terms:ir.actions.act_window,help:bookshelf.books_list_action
+msgid "Nothing to show, add some books"
+msgstr "Nada que mostrar. Agrega algunos libros"
+
+#. module: bookshelf
+#: model:ir.model.fields,field_description:bookshelf.field_bookshelf_book__name
+msgid "Title"
+msgstr "Título"

@@ -6,6 +6,12 @@
         <field name="res_model">bookshelf.book</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
+        <field name="arch" type="xml">
+            <footer>
+                <button class="btn-primary" name="%(launch_author_wizard)d" string="Add Author" type="action" />
+            </footer>
+        </field>
+
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">Nothing to show, add some books</p>
         </field>
@@ -18,25 +24,20 @@
             <form string="Book">
                 <sheet>
                     <group>
-                        <field name="name" />
+                        <group>
+                            <field name="name" />
+                            <field name="author_id" string="Author" />
+                        </group>
+
+                        <group>
+                            <field name="criticize" />
+                            <field name="isbn" />
+                        </group>
                     </group>
 
-                    <group>
-                        <field name="criticize" />
-                        <field name="isbn" />
-                    </group>
-
-                    <notebook name="authors_notebook">
-                        <page string="Authors" name="page_authors">
-                            <field name="author_id">
-                                <tree>
-                                    <field name="id" />
-                                    <field name="nationality" />
-                                    <field name="name" />
-                                </tree>
-                            </field>
-                        </page>
-                    </notebook>
+                    <footer>
+                        <button class="btn-primary" name="%(launch_author_wizard)d" string="Add Author" type="action" />
+                    </footer>
                 </sheet>
             </form>
         </field>
@@ -57,6 +58,7 @@
                     <group>
                         <field name="name" />
                         <field name="nationality" />
+                        <field name="birthdate" />
                     </group>
 
                     <notebook>
@@ -74,7 +76,40 @@
         </field>
     </record>
 
-    <menuitem id="main_bookshelf_menu" name="BookShelf" />
+    <!-- Wizards o EL HEHCICERO CON SUS GRANDES PODERES -->
+    <record model="ir.ui.view" id="wizard_form_view">
+        <field name="name">wizard.form</field>
+        <field name="model">bookshelf.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Add Authors">
+                <group>
+                    <field name="author_id" />
+
+                    <field name="name" />
+                    <field name="nationality" />
+                    <field name="birthdate" />
+                </group>
+
+                <footer>
+                    <button name="subscribe" type="object"
+                            string="subscribe" class="oe_highlight" />
+                    <button special="cancel"  string="Cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <act_window id="launch_author_wizard"
+                name="Modify Author"
+                src_model="bookshelf.book"
+                res_model="bookshelf.wizard"
+                view_mode="form"
+                target="new"
+                key2="client_action_multi" />
+
+    <!-- Objetos del menu ************** -->
+
+    <menuitem id="main_bookshelf_menu" name="BookShelf" web_icon="bookshelf,static/description/icon.png" />
 
     <menuitem id="bookshelf_menu" name="Book Shelf"
                 parent="main_bookshelf_menu"

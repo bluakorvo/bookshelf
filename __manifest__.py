@@ -3,13 +3,12 @@
 {
     'name': "BookShelf",
     'summary': """Para registrar libros""",
-    'description': """
-    Para mantener actualizadas tus referencias
-    """,
-    'author': "A.M.G.B.",
+    'author': "Jarsa Sistemas",
     'website': "R.RR",
     'category': "Uncategorized, Test, Postventa",
-    'version': '12.0.0.1',
+    'version': '12.0.0.0.1',
+
+    'license': "GPL-3",
 
     'depends': ['base'],
 
