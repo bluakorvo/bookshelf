@@ -12,14 +12,22 @@ class Wizard(models.TransientModel):
 
     author_id = fields.Many2one('bookshelf.author', string="Author", required=True,
                                 default=_default_author, index=True)
-    # book_ids = fields.One2many('bookshelf.book', 'author_id')
 
-    name = fields.Char(required=True)
-    nationality = fields.Char(default="Unknow")
-    birthdate = fields.Date(required=True)
+    def _default_author_name(self):
+        return self.author_id.name
+
+    def _default_author_country(self):
+        return self.author_id.nationality
+
+    def _default_author_birthdate(self):
+        return self.author_id.birthdate
+
+    name = fields.Char(required=True, default=_default_author_name)
+    nationality = fields.Char(default=_default_author_country)
+    birthdate = fields.Date(default=_default_author_birthdate)
 
     @api.multi
-    def subscribe(self):
+    def modify_author(self):
         self.author_id.name = self.name
         self.author_id.nationality = self.nationality
         self.author_id.birthdate = self.birthdate

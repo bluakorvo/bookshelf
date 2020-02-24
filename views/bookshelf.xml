@@ -36,7 +36,7 @@
                     </group>
 
                     <footer>
-                        <button class="btn-primary" name="%(launch_author_wizard)d" string="Add Author" type="action" />
+                        <button class="btn-primary" name="%(launch_author_wizard)d" string="Modify Author" type="action" />
                     </footer>
                 </sheet>
             </form>
@@ -83,16 +83,14 @@
         <field name="arch" type="xml">
             <form string="Add Authors">
                 <group>
-                    <field name="author_id" />
-
                     <field name="name" />
                     <field name="nationality" />
                     <field name="birthdate" />
                 </group>
 
                 <footer>
-                    <button name="subscribe" type="object"
-                            string="subscribe" class="oe_highlight" />
+                    <button name="modify_author" type="object"
+                            string="Modify" class="oe_highlight" />
                     <button special="cancel"  string="Cancel" />
                 </footer>
             </form>

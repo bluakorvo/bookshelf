@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <odoo>
-<<<<<<< HEAD
-=======
-    <data>
->>>>>>> c5f741f60731ab0a3820112535d82782849165d2
         <record model="bookshelf.author" id="bookshelf_author_zaratrusta">
             <field name="name">Zaratrusta</field>
             <field name="nationality">Europeo</field>
